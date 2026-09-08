@@ -22,28 +22,28 @@ if (!page.value) {
       v-if="page"
       :value="page"
       class="
-        prose prose-slate max-w-none rounded-[20px] border border-slate-200 bg-white
+        prose prose-neutral max-w-none rounded-[20px] border border-neutral-200 bg-white
         p-[clamp(24px,5vw,64px)] text-base leading-[1.95] wrap-anywhere
-        shadow-[0_8px_32px_rgb(15_23_42/0.03)]
-        prose-headings:text-slate-900 prose-strong:text-slate-800
+        shadow-[0_8px_32px_rgb(0_0_0/0.03)]
+        prose-headings:text-neutral-900 prose-strong:text-neutral-800
         prose-h1:mb-[1.1em] prose-h1:text-[clamp(1.9rem,4vw,2.75rem)]
         prose-h1:leading-[1.3] prose-h1:tracking-[-0.035em]
         prose-h2:mt-[2.5em] prose-h2:mb-[1em] prose-h2:border-b
-        prose-h2:border-slate-200 prose-h2:pb-[0.65em] prose-h2:text-[1.4rem] prose-h2:leading-normal
+        prose-h2:border-neutral-200 prose-h2:pb-[0.65em] prose-h2:text-[1.4rem] prose-h2:leading-normal
         [&>:first-child]:mt-0 [&>:last-child]:mb-0 prose-p:my-[1.4em]
-        prose-a:text-teal-700 prose-a:decoration-1 prose-a:underline-offset-4
-        hover:prose-a:text-teal-800 focus-visible:prose-a:rounded-xs
+        prose-a:text-neutral-700 prose-a:decoration-1 prose-a:underline-offset-4
+        hover:prose-a:text-neutral-800 focus-visible:prose-a:rounded-xs
         focus-visible:prose-a:outline-2 focus-visible:prose-a:outline-offset-4
-        focus-visible:prose-a:outline-teal-700
+        focus-visible:prose-a:outline-neutral-700
         prose-table:mt-[1.75em] prose-table:mb-[2.5em] prose-table:block prose-table:w-full
         prose-table:overflow-x-auto prose-table:rounded-[10px] prose-table:border
-        prose-table:border-slate-200 prose-table:text-sm prose-table:leading-[1.7]
-        prose-th:bg-slate-100 prose-th:px-[18px] prose-th:py-3.5 prose-th:align-middle
-        prose-th:font-semibold prose-th:whitespace-nowrap prose-th:text-slate-700
+        prose-table:border-neutral-200 prose-table:text-sm prose-table:leading-[1.7]
+        prose-th:bg-neutral-100 prose-th:px-[18px] prose-th:py-3.5 prose-th:align-middle
+        prose-th:font-semibold prose-th:whitespace-nowrap prose-th:text-neutral-700
         prose-td:px-[18px] prose-td:py-3.5 prose-td:align-middle
         [&_th:first-child]:whitespace-nowrap [&_td:first-child]:whitespace-nowrap
         [&_th:last-child]:text-center [&_td:last-child]:text-center
-        [&_tbody_tr:nth-child(even)]:bg-slate-50 prose-li:my-[0.5em]
+        [&_tbody_tr:nth-child(even)]:bg-neutral-50 prose-li:my-[0.5em]
         [&_li>ul]:mt-[0.5em] [&_li>ul]:mb-[1em]
         max-[600px]:rounded-[14px] max-[600px]:px-5 max-[600px]:py-7
         max-[600px]:text-[0.9375rem] max-[600px]:leading-[1.9]
