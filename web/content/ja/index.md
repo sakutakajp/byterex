@@ -26,4 +26,4 @@ Byterexという名前は、コンピュータの **Byte** と恐竜の **T-Rex*
 | 💾 SSD          | M.2 NVMe 500GB〜1TB + USBケース            | 1    |
 | 🖨️ 3Dプリンター | Bambu Lab A1                               | 1    |
 
-[About](/about)
+[About](/ja/about)

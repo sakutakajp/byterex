@@ -31,4 +31,4 @@
   - AWS
   - Firebase
 
-[Back home](/)
+[Back home](/ja)
