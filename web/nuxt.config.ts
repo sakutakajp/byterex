@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/test-utils"],
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+  nitro: {
+    prerender: {
+      routes: ["/ja", "/ja/about", "/en", "/en/about"],
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
