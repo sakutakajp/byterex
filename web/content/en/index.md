@@ -1,3 +1,8 @@
+---
+title: Byterex | Automating Household Chores with AI and Robotics
+description: Byterex aims to automate household chores with AI and robotics. Explore the system and hardware for a robot that recognizes, picks up, and sorts laundry.
+---
+
 # Byterex Project
 
 Byterex is a project that aims to automate household chores using AI and robotics.

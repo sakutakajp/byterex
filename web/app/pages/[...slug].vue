@@ -13,6 +13,29 @@ if (!page.value) {
     fatal: true,
   });
 }
+
+const { locale } = useSiteLocale();
+const title = computed(() => page.value?.title || "Byterex");
+const description = computed(() => page.value?.description || "");
+const canonicalUrl = computed(() => `https://byterex.ai${contentPath.value}`);
+
+useSeoMeta({
+  title: () => title.value,
+  description: () => description.value,
+  ogTitle: () => title.value,
+  ogDescription: () => description.value,
+  ogType: "website",
+  ogSiteName: "Byterex",
+  ogUrl: () => canonicalUrl.value,
+  ogLocale: () => locale.value === "ja" ? "ja_JP" : "en_US",
+  twitterCard: "summary",
+  twitterTitle: () => title.value,
+  twitterDescription: () => description.value,
+});
+
+useHead(() => ({
+  link: [{ rel: "canonical", href: canonicalUrl.value }],
+}));
 </script>
 
 <template>

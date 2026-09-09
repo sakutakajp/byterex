@@ -1,3 +1,8 @@
+---
+title: About the Developer | Byterex
+description: Meet the developer behind Byterex, an engineer who loves building applications. Explore selected projects and skills in TypeScript, Vue, Nuxt, and more.
+---
+
 ## Hello
 
 Hi! I'm an engineer who loves developing applications.
