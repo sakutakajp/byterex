@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const route = useRoute();
+const contentPath = computed(() => route.path.replace(/\/+$/, "") || "/");
 
-const { data: page } = await useAsyncData("page-" + route.path, () => {
-  return queryCollection("content").path(route.path).first();
+const { data: page } = await useAsyncData(() => "page-" + contentPath.value, () => {
+  return queryCollection("content").path(contentPath.value).first();
 });
 
 if (!page.value) {
