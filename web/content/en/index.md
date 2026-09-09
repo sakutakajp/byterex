@@ -4,7 +4,11 @@ Byterex is a project that aims to automate household chores using AI and robotic
 
 Our first goal is to build **a robot that can recognize, pick up, and sort laundry**.
 
+## System Overview
+
 Built on LeKiwi / LeRobot, the project combines a robotic arm, cameras, a Raspberry Pi, and an AI accelerator to bring object recognition, manipulation, and decision-making together in a single system.
+
+## Origin of the Name
 
 The name Byterex combines **Byte**, the computing term, and **T-Rex**, the dinosaur.  
 It evokes a small household robot whose arm resembles a dinosaur's head, picking things up as if taking a bite.
@@ -25,5 +29,15 @@ It evokes a small household robot whose arm resembles a dinosaur's head, picking
 | 🔋 Battery | Start with the 12V battery included with LeKiwi | 1 |
 | 💾 SSD | M.2 NVMe 500GB–1TB + USB enclosure | 1 |
 | 🖨️ 3D printer | Bambu Lab A1 | 1 |
+
+## byterex.ai
+
+The website for this project, developed with Codex.
+
+**Install Codex**
+
+```sh
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+```
 
 [About](/en/about)
