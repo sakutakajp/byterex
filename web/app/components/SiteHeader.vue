@@ -16,7 +16,8 @@ useHead({
 <template>
   <header class="border-b border-neutral-200 bg-white">
     <div class="mx-auto flex max-w-[960px] flex-wrap items-center justify-between gap-x-6 gap-y-3 px-6 py-5 max-[600px]:px-5">
-      <NuxtLink :to="homePath" class="rounded-sm font-[Ubuntu,sans-serif] text-2xl font-bold tracking-tight text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-700">
+      <NuxtLink :to="homePath" class="inline-flex items-center gap-2 rounded-sm font-[Ubuntu,sans-serif] text-2xl font-bold tracking-tight text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-700">
+        <img src="/icon.png" alt="" width="32" height="32" class="size-8 shrink-0 object-contain">
         Byterex
       </NuxtLink>
       <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
