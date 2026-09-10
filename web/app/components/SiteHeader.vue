@@ -36,7 +36,8 @@ useHead({
       <button
         ref="menuButton"
         type="button"
-        class="inline-flex min-h-11 items-center gap-2 rounded-lg border border-neutral-200 px-3 text-sm font-medium hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 md:hidden"
+        class="inline-flex size-11 items-center justify-center rounded-lg border border-neutral-200 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 md:hidden"
+        :aria-label="menuOpen ? labels.closeMenu : labels.menu"
         :aria-expanded="menuOpen"
         aria-controls="header-navigation"
         @click="menuOpen = !menuOpen"
@@ -45,7 +46,6 @@ useHead({
           <path v-if="menuOpen" d="m6 6 12 12M6 18 18 6" />
           <path v-else d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-        {{ menuOpen ? labels.closeMenu : labels.menu }}
       </button>
       <div
         id="header-navigation"
