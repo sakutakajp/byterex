@@ -10,11 +10,11 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
     },
   },
-  // runtimeConfig: {
-  //   public: {
-  //     gtmId: "",
-  //   },
-  // },
+  runtimeConfig: {
+    public: {
+      gtmId: "process.env.GTM_ID",
+    },
+  },
   nitro: {
     prerender: {
       routes: ["/ja", "/ja/about", "/en", "/en/about"],
