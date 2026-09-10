@@ -13,6 +13,8 @@ Byterexは、AIとロボティクスを使って、これまで人間が行っ�
 
 LeKiwi / LeRobotをベースに、ロボットアーム、カメラ、Raspberry Pi、AIアクセラレータなどを組み合わせ、物体認識・操作・判断を一つのシステムとして統合していきます。
 
+詳しくは[システム構成](/ja/docs/architecture)をご覧ください。
+
 ## 名前の由来
 
 Byterexという名前は、コンピュータの **Byte** と恐竜の **T-Rex** を組み合わせたものです。  
@@ -39,7 +41,7 @@ Byterexという名前は、コンピュータの **Byte** と恐竜の **T-Rex*
 
 プロジェクトでこれから取り組むことを[やること一覧](/ja/todo)にまとめています。
 
-[やること | Byterex](/ja/todo)
+[やること | Byterex](/ja/docs/todo)
 
 ## byterex.ai
 
