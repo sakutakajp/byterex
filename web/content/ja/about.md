@@ -1,5 +1,5 @@
 ---
-title: 自己紹介 | Byterex
+title: 私について | Byterex
 description: Byterexの開発者を紹介します。アプリケーション開発に取り組むエンジニアの制作物や、TypeScript・Vue・Nuxtなどのスキルセットを掲載しています。
 ---
 

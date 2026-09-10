@@ -1,7 +1,7 @@
 const messages = {
   ja: {
     home: "ホーム",
-    about: "自己紹介",
+    about: "私について",
     navigation: "メインナビゲーション",
     footerNavigation: "フッターナビゲーション",
     language: "言語",
