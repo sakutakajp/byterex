@@ -1,6 +1,7 @@
 const messages = {
   ja: {
     home: "ホーム",
+    blog: "ブログ",
     about: "私について",
     navigation: "メインナビゲーション",
     footerNavigation: "フッターナビゲーション",
@@ -9,6 +10,7 @@ const messages = {
   },
   en: {
     home: "Home",
+    blog: "Blog",
     about: "About",
     navigation: "Main navigation",
     footerNavigation: "Footer navigation",
@@ -24,6 +26,7 @@ export function useSiteLocale() {
   );
   const labels = computed(() => messages[locale.value]);
   const homePath = computed(() => `/${locale.value}`);
+  const blogPath = computed(() => `/${locale.value}/blog`);
   const aboutPath = computed(() => `/${locale.value}/about`);
   const languagePath = (language: "ja" | "en") => ({
     path: `/${language}${route.path.replace(/^\/(ja|en)(?=\/|$)/, "").replace(/\/$/, "")}`,
@@ -31,5 +34,5 @@ export function useSiteLocale() {
     hash: route.hash,
   });
 
-  return { locale, labels, homePath, aboutPath, languagePath };
+  return { locale, labels, homePath, aboutPath, blogPath, languagePath };
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale, labels, homePath, aboutPath, languagePath } = useSiteLocale();
+const { locale, labels, homePath, blogPath, aboutPath, languagePath } = useSiteLocale();
 
 useHead({
   link: [
@@ -25,6 +25,7 @@ useHead({
           <NuxtLink :to="homePath" exact-active-class="bg-neutral-100 text-neutral-900" class="rounded-lg px-3 py-2.5 transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-neutral-700">
             {{ labels.home }}
           </NuxtLink>
+        <NuxtLink :to="blogPath" active-class="text-neutral-900" class="rounded-lg px-3 py-2.5 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700">{{ labels.blog }}</NuxtLink>
           <NuxtLink :to="aboutPath" exact-active-class="bg-neutral-100 text-neutral-900" class="rounded-lg px-3 py-2.5 transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-neutral-700">
             {{ labels.about }}
           </NuxtLink>
