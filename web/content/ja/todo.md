@@ -1,5 +1,5 @@
 ---
-title: やること
+title: やること | Byterex
 description: Byterexプロジェクトでやることをまとめるページです。
 ---
 
