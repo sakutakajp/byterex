@@ -35,5 +35,3 @@ Hi! I'm an engineer who loves developing applications.
 - Cloud
   - AWS
   - Firebase
-
-[Back home](/en)

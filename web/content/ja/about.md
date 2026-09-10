@@ -35,5 +35,3 @@ description: Byterexの開発者を紹介します。アプリケーション開
 - クラウド
   - AWS
   - Firebase
-
-[Back home](/ja)

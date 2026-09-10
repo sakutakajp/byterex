@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ["/ja", "/ja/about", "/en", "/en/about"],
+      routes: ["/ja", "/ja/about", "/ja/todo", "/en", "/en/about", "/en/todo"],
     },
   },
   vite: {

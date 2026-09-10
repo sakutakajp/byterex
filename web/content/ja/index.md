@@ -35,6 +35,10 @@ Byterexという名前は、コンピュータの **Byte** と恐竜の **T-Rex*
 | 💾 SSD          | M.2 NVMe 500GB〜1TB + USBケース            | 1    |
 | 🖨️ 3Dプリンター | Bambu Lab A1                               | 1    |
 
+## やること
+
+プロジェクトでこれから取り組むことを[やること一覧](/ja/todo)にまとめています。
+
 ## byterex.ai
 
 このプロジェクトのWebサイト。Codexで開発する。
@@ -44,5 +48,3 @@ Byterexという名前は、コンピュータの **Byte** と恐竜の **T-Rex*
 ```sh
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
 ```
-
-[About](/ja/about)

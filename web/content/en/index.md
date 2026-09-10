@@ -35,6 +35,10 @@ It evokes a small household robot whose arm resembles a dinosaur's head, picking
 | 💾 SSD | M.2 NVMe 500GB–1TB + USB enclosure | 1 |
 | 🖨️ 3D printer | Bambu Lab A1 | 1 |
 
+## To Do
+
+See the [to-do list](/en/todo) for upcoming tasks in the project.
+
 ## byterex.ai
 
 The website for this project, developed with Codex.
@@ -44,5 +48,3 @@ The website for this project, developed with Codex.
 ```sh
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
 ```
-
-[About](/en/about)
