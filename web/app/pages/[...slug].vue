@@ -61,9 +61,7 @@ useHead(() => ({
         hover:prose-a:text-neutral-800 focus-visible:prose-a:rounded-xs
         focus-visible:prose-a:outline-2 focus-visible:prose-a:outline-offset-4
         focus-visible:prose-a:outline-neutral-700
-        prose-table:mt-[1.75em] prose-table:mb-[2.5em] prose-table:block prose-table:w-full
-        prose-table:overflow-x-auto prose-table:rounded-[10px] prose-table:border
-        prose-table:border-neutral-200 prose-table:text-sm prose-table:leading-[1.7]
+        prose-table:w-full prose-table:text-sm prose-table:leading-[1.7]
         prose-th:bg-neutral-100 prose-th:px-[18px] prose-th:py-3.5 prose-th:align-middle
         prose-th:font-semibold prose-th:whitespace-nowrap prose-th:text-neutral-700
         prose-td:px-[18px] prose-td:py-3.5 prose-td:align-middle
