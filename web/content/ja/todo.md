@@ -13,6 +13,8 @@ description: Byterexプロジェクトでやることをまとめるページで
 
 - [ ] GTM配信
 - [ ] GA4追加
+  - [x] GA4にプロパティを追加
+  - [ ] GTMにGA4を登録
 - [ ] GitHub Actions自動デプロイ
   - [ ] Service Accountを作る
   - [ ] JSONキーを作る
@@ -20,6 +22,7 @@ description: Byterexプロジェクトでやることをまとめるページで
   - [ ] GitHub Actionsを作る
 - [ ] Xアカウントへのリンク追加
 - [ ] GitHubアカウントへのリンク追加
+- [ ] Zennアカウントへのリンク追加
 
 ## 3Dプリンター
 
