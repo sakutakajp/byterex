@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { labels, homePath, blogPath, aboutPath } = useSiteLocale();
+const { labels, homePath, blogPath, docsPath, aboutPath } = useSiteLocale();
 </script>
 
 <template>
@@ -13,6 +13,7 @@ const { labels, homePath, blogPath, aboutPath } = useSiteLocale();
       <nav :aria-label="labels.footerNavigation" class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
         <NuxtLink :to="homePath" class="rounded-sm py-2 hover:text-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-700">{{ labels.home }}</NuxtLink>
         <NuxtLink :to="blogPath" active-class="text-neutral-900" class="rounded-lg px-3 py-2.5 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700">{{ labels.blog }}</NuxtLink>
+        <NuxtLink :to="docsPath" active-class="text-neutral-900" class="rounded-lg px-3 py-2.5 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700">{{ labels.docs }}</NuxtLink>
         <NuxtLink :to="aboutPath" class="rounded-sm py-2 hover:text-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-700">{{ labels.about }}</NuxtLink>
       </nav>
     </div>

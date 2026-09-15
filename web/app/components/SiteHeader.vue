@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale, labels, homePath, blogPath, aboutPath, languagePath } = useSiteLocale();
+const { locale, labels, homePath, blogPath, docsPath, aboutPath, languagePath } = useSiteLocale();
 const route = useRoute();
 const menuOpen = ref(false);
 const menuButton = ref<HTMLButtonElement | null>(null);
@@ -36,7 +36,7 @@ useHead({
       <button
         ref="menuButton"
         type="button"
-        class="inline-flex size-11 items-center justify-center rounded-lg border border-neutral-200 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 md:hidden"
+        class="inline-flex size-11 items-center justify-center rounded-lg border border-neutral-200 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 min-[900px]:hidden"
         :aria-label="menuOpen ? labels.closeMenu : labels.menu"
         :aria-expanded="menuOpen"
         aria-controls="header-navigation"
@@ -50,18 +50,19 @@ useHead({
       <div
         id="header-navigation"
         :class="menuOpen ? 'flex' : 'hidden'"
-        class="w-full flex-col items-stretch gap-3 border-t border-neutral-200 pt-3 md:flex md:w-auto md:flex-row md:items-center md:gap-x-6 md:border-0 md:pt-0"
+        class="w-full flex-col items-stretch gap-3 border-t border-neutral-200 pt-3 min-[900px]:flex min-[900px]:w-auto min-[900px]:flex-row min-[900px]:items-center min-[900px]:gap-x-6 min-[900px]:border-0 min-[900px]:pt-0"
       >
-        <nav :aria-label="labels.navigation" class="flex flex-col gap-1 text-sm font-medium md:flex-row md:items-center">
+        <nav :aria-label="labels.navigation" class="flex flex-col gap-1 text-sm font-medium min-[900px]:flex-row min-[900px]:items-center">
           <NuxtLink :to="homePath" exact-active-class="bg-neutral-100 text-neutral-900" class="rounded-lg px-3 py-2.5 transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-neutral-700" @click="menuOpen = false">
             {{ labels.home }}
           </NuxtLink>
           <NuxtLink :to="blogPath" active-class="text-neutral-900" class="rounded-lg px-3 py-2.5 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700" @click="menuOpen = false">{{ labels.blog }}</NuxtLink>
+          <NuxtLink :to="docsPath" active-class="text-neutral-900" class="rounded-lg px-3 py-2.5 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700" @click="menuOpen = false">{{ labels.docs }}</NuxtLink>
           <NuxtLink :to="aboutPath" exact-active-class="bg-neutral-100 text-neutral-900" class="rounded-lg px-3 py-2.5 transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-neutral-700" @click="menuOpen = false">
             {{ labels.about }}
           </NuxtLink>
         </nav>
-        <nav :aria-label="labels.language" class="flex items-center gap-1 self-start rounded-xl border border-neutral-200 p-1 text-xs font-medium md:self-auto">
+        <nav :aria-label="labels.language" class="flex items-center gap-1 self-start rounded-xl border border-neutral-200 p-1 text-xs font-medium min-[900px]:self-auto">
           <NuxtLink v-for="language in (['ja', 'en'] as const)" :key="language" :to="languagePath(language)" :lang="language" :hreflang="language" :aria-current="locale === language ? 'true' : undefined" :class="locale === language ? 'bg-neutral-900 text-white' : 'text-neutral-600 hover:bg-neutral-50'" class="rounded-lg px-3 py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700" @click="menuOpen = false">
             {{ language === 'ja' ? '日本語' : 'English' }}
           </NuxtLink>

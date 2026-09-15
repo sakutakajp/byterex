@@ -21,10 +21,12 @@ export default defineNuxtConfig({
       routes: [
         "/ja",
         "/ja/about",
+        "/ja/docs",
         "/ja/docs/todo",
         "/ja/docs/architecture",
         "/en",
         "/en/about",
+        "/en/docs",
         "/en/docs/todo",
         "/en/docs/architecture",
         "/ja/blog",
