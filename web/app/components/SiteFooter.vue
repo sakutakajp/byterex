@@ -21,10 +21,10 @@ const socialLinks = computed(() => [
             v-for="link in socialLinks"
             :key="link.name"
             :href="link.url"
-            class="inline-flex min-h-11 items-center gap-2 rounded-lg px-3 text-sm text-neutral-600 hover:bg-neutral-50 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700"
+            :aria-label="link.name"
+            class="inline-flex size-12 items-center justify-center rounded-lg text-neutral-600 hover:bg-neutral-50 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700"
           >
-            <FontAwesomeIcon :icon="link.icon" class="size-5" aria-hidden="true" />
-            <span>{{ link.name }}</span>
+            <FontAwesomeIcon :icon="link.icon" class="text-[32px]" aria-hidden="true" />
           </a>
         </div>
         <p class="text-xs text-neutral-500">&copy; Byterex Project</p>
