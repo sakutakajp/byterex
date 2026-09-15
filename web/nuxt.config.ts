@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/test-utils"],
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
+  css: ["@fortawesome/fontawesome-svg-core/styles.css", "~/assets/css/main.css"],
   app: {
     head: {
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
@@ -12,6 +12,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      xUrl: "https://x.com/sakutakajp",
+      githubUrl: "https://github.com/sakutakajp",
       gtmId: "process.env.GTM_ID",
     },
   },

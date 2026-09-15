@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import { faGithub, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 const { labels, homePath, blogPath, docsPath, aboutPath } = useSiteLocale();
+const config = useRuntimeConfig();
+const socialLinks = computed(() => [
+  { name: "X", url: config.public.xUrl, icon: faXTwitter },
+  { name: "GitHub", url: config.public.githubUrl, icon: faGithub },
+].filter(link => link.url));
 </script>
 
 <template>
@@ -8,6 +16,17 @@ const { labels, homePath, blogPath, docsPath, aboutPath } = useSiteLocale();
       <div class="space-y-2">
         <p class="text-sm font-semibold text-neutral-900">Byterex Project</p>
         <p class="text-sm leading-relaxed text-neutral-500">{{ labels.description }}</p>
+        <div v-if="socialLinks.length" class="flex flex-wrap gap-2">
+          <a
+            v-for="link in socialLinks"
+            :key="link.name"
+            :href="link.url"
+            class="inline-flex min-h-11 items-center gap-2 rounded-lg px-3 text-sm text-neutral-600 hover:bg-neutral-50 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700"
+          >
+            <FontAwesomeIcon :icon="link.icon" class="size-5" aria-hidden="true" />
+            <span>{{ link.name }}</span>
+          </a>
+        </div>
         <p class="text-xs text-neutral-500">&copy; Byterex Project</p>
       </div>
       <nav :aria-label="labels.footerNavigation" class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
