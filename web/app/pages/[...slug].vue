@@ -18,19 +18,26 @@ const { locale } = useSiteLocale();
 const title = computed(() => page.value?.title || "Byterex");
 const description = computed(() => page.value?.description || "");
 const canonicalUrl = computed(() => `https://byterex.ai${contentPath.value}`);
+const ogImage = computed(() => {
+  const cover = page.value?.cover?.trim();
+  if (/^\/(ja|en)\/blog\/.+/.test(contentPath.value) && cover) {
+    return new URL(cover, "https://byterex.ai/").href;
+  }
+  return "https://byterex.ai/ogp.png";
+});
 
 useSeoMeta({
   title: () => title.value,
   description: () => description.value,
   ogTitle: () => title.value,
   ogDescription: () => description.value,
-  ogImage: "https://byterex.ai/ogp.png",
+  ogImage: () => ogImage.value,
   ogType: "website",
   ogSiteName: "Byterex",
   ogUrl: () => canonicalUrl.value,
   ogLocale: () => locale.value === "ja" ? "ja_JP" : "en_US",
   twitterCard: "summary_large_image",
-  twitterImage: "https://byterex.ai/ogp.png",
+  twitterImage: () => ogImage.value,
   twitterTitle: () => title.value,
   twitterDescription: () => description.value,
 });
