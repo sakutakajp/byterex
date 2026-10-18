@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+models/
+*.litertlm
+*.log
+.env
+.env.*
