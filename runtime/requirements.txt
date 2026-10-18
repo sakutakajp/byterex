@@ -1,0 +1,3 @@
+# Official Linux ARM64 wheel only; CLI package is not required.
+# Install with: python -m pip install --only-binary=:all: --require-hashes -r requirements.txt
+litert-lm-api==0.18.0 --hash=sha256:d066db0c2bcd832b2b9cf8532b5fff385f7cff8562a1b482f8da0b51f810c47c
