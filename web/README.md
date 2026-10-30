@@ -26,6 +26,12 @@ Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more
 
 ## Setup
 
+Use Node.js `^22.22.3 || ^24.15.0 || >=26.0.0`, matching Nuxt 4.6.3.
+The dependency update was verified on Node.js 24.22.1. The devcontainer uses
+the floating `node:22` image; rebuild it and check `node --version` meets
+22.22.3 before installing. The Node 22 container was not run in this verification.
+Use `npm ci` with the committed lockfile for reproducible installs.
+
 Make sure to install dependencies:
 
 ```bash

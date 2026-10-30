@@ -1,10 +1,11 @@
 <template>
   <div class="alert" :style="{ 'border-color': color }">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 
 <script setup lang="ts">
+defineOptions({ name: "SiteAlert" })
 const { color } = defineProps({
   color: {
     type: String,

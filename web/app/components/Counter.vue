@@ -11,6 +11,7 @@
 </template>
 
 <script setup lang="ts">
+defineOptions({ name: "SiteCounter" })
 const count = ref(0)
 
 const increment = () => {
